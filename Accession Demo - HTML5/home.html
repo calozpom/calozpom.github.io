@@ -1,0 +1,964 @@
+<!DOCTYPE HTML> 
+<html class="no-js">
+<head>
+<title>Accession Demo</title>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href='style.css' rel='stylesheet'/>
+<link rel="shortcut icon" href="imgs/favicon.ico" />
+<!--[if IE 9]> 
+<link rel="stylesheet" type="text/css" href="iestyle.css"/> 
+<![endif]-->
+<style type="text/css" media="only screen and (device-width: 768px)">
+#answer{top:-286px;}
+#reset1, #reset2{top:9px;}
+#navTable td{opacity:1;}
+</style>
+<style type="text/css" media="only screen and (max-width: 1086px)">
+#reset1, #reset2{
+top: 10px;
+left: -90px;}
+</style>
+<style type="text/css" media="only screen and (max-width: 1470px)">
+#answer{
+	top: 71px;
+	left: -218px;
+	}
+</style>
+<style type="text/css" media="only screen and (max-width: 1270px)">
+#answer{
+	top: -265px;
+	left: -217px;
+	}
+</style>
+<style type="text/css" media="only screen and (max-width: 1088px)">
+#answer{
+	left: -123px;
+	}
+</style>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'> 
+<link rel="apple-touch-icon" href="imgs/icon-72.png"/>
+<script type="text/javascript" src="js/jquery-1.4.3.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.13908.js"></script>
+</head>
+<body>
+	<div class="hidden">
+		<script type="text/javascript">
+			<!--//--><![CDATA[//><!--
+				var images = new Array()
+				function preload() {
+					for (i = 0; i < preload.arguments.length; i++) {
+						images[i] = new Image()
+						images[i].src = preload.arguments[i]
+					}
+				}
+				preload(
+					
+						"imgs/main_bg.png",
+						"imgs/pointer_left.png",
+						"imgs/page1logo.png",
+						"imgs/navigation.png",
+						"imgs/roadmap_tag.png",
+						"imgs/pointer_right.png",
+						"imgs/close.png",
+						"imgs/nav_left.png",
+						"imgs/nav_right.png",
+						"imgs/header_bg.png",
+						"media/hubinteractivebg.png",
+						"media/introP2.png",
+						"media/pullcall.png",
+						"media/thehubimage.png",
+						"media/video_calls.png",
+						"media/pushcall1.png",
+						"media/chatinteractivebkg.png",
+						"media/callsimage.png",
+						"media/ecm.png",
+						"media/chatimage.png",
+						"media/vvmv.png",
+						"media/audio_calls.png",
+						"media/roadmap.png",
+						"media/movecalls.png",
+						"media/vvm.png",
+						"media/status.png",
+						"media/media.png",
+						"media/headerbg.png",
+						"media/footerbg.png",
+						"media/people.png",
+						"media/notifications.png",
+						"media/actions.png",
+						"media/readreport.png",
+						"media/presence.png",
+						"media/pushcall2.png",
+						"media/privately.png",
+						"media/startchat.png",
+						"media/share.png",
+						"media/pushcall3.png",
+						"media/pushcall4.png",
+						"media/hub2.png",
+						"media/pullcalledit.png",
+						"media/switchbutton.png",
+						"media/answer.png",
+						"media/tap.png",
+						"media/tap1.png",
+						"media/tap2.png",
+						"media/reset.png",
+						"media/plus.png",
+						"imgs/btn_callPull_background.png",
+						"imgs/btn_callPull_down.png",
+						"imgs/btn_callPull_up.png",
+						"imgs/learnmore.png",
+						"imgs/icon-72.png",
+						"imgs/taptopullto.png",
+						"imgs/taptopull.png",
+						"imgs/btn_callPull_animation.png",
+						"imgs/nav/page_1.png",
+						"imgs/nav/page_2.png",
+						"imgs/nav/3_pull.png",
+						"imgs/nav/page_4.png",
+						"imgs/nav/5_ecm.png",
+						"imgs/nav/page_6.png",
+						"imgs/nav/page_7.png",
+						"imgs/nav/4_push.png",
+						"imgs/nav/5_ecm.png",
+						"imgs/nav/6_vvm.png",
+						"imgs/nav/page_10.png",
+						"imgs/nav/page_12.png",
+						"imgs/nav/page_13.png",
+						"imgs/nav/page_14.png",
+						"imgs/nav/page_15.png",
+						"imgs/nav/page_16.png",
+						"imgs/nav/page_17.png",
+						"imgs/nav/page_18.png"
+							)
+						//--><!]]>
+					</script>
+				</div>					
+					
+	<div id='navoverlay'>
+		<table id='navTable'>
+					<tr>
+						<td  onclick="slider3.gotoSlide(0)"><a href="#"><img src='imgs/nav/page_1.png'>Welcome</a></td>
+						<td  onclick="slider3.gotoSlide(1)"><a href="#"><img src='imgs/nav/page_2.png'>Intro</a></td>
+						<td  onclick="slider3.gotoSlide(2)"><a href="#"><img src='imgs/nav/1_audio.png'>Audio Calls</a></td>
+						<td  onclick="slider3.gotoSlide(3)"><a href="#"><img src='imgs/nav/page_4.png'>Call Quality</a></td>
+						<td  onclick="slider3.gotoSlide(4)"><a href="#"><img src='imgs/nav/5_ecm.png'>Video Calls</a></td>
+						<td  onclick="slider3.gotoSlide(5)"><a href="#"><img src='imgs/nav/page_6.png'>Move Calls</a></td>
+					</tr>
+					<tr>
+						<td  onclick="slider3.gotoSlide(6)"><a href="#"><img src='imgs/nav/page_7.png'>Pull Calls</a></td>
+						<td  onclick="slider3.gotoSlide(7)"><a href="#"><img src='imgs/nav/4_push.png'>Push Calls</a></td>
+						<td  onclick="slider3.gotoSlide(8)"><a href="#"><img src='imgs/nav/5_ecm.png'>Call Manager</a></td>
+						<td  onclick="slider3.gotoSlide(9)"><a href="#"><img src='imgs/nav/6_vvm.png'>Voicemail</a></td>
+						<td  onclick="slider3.gotoSlide(10)"><a href="#"><img src='imgs/nav/page_10.png'>Videomail</a></td>
+						<td  onclick="slider3.gotoSlide(11)"><a href="#"><img src='imgs/nav/page_12.png'>Roadmap</a></td>
+					</tr>
+					<tr>
+						<td  onclick="slider3.gotoSlide(12)"><a href="#"><img src='imgs/nav/page_13.png'>Call Features</a></td>
+						<td  onclick="slider3.gotoSlide(13)"><a href="#"><img src='imgs/nav/page_14.png'>Chat Video</a></td>
+						<td  onclick="slider3.gotoSlide(14)"><a href="#"><img src='imgs/nav/page_15.png'>Chat Demo</a></td>
+						<td  onclick="slider3.gotoSlide(15)"><a href="#"><img src='imgs/nav/page_16.png'>Hub Video</a></td>
+						<td  onclick="slider3.gotoSlide(16)"><a href="#"><img src='imgs/nav/page_17.png'>Hub Demo</a></td>
+						<td  onclick="slider3.gotoSlide(17)"><a href="#"><img src='imgs/nav/page_18.png'>Outro</a></td>
+					</tr>
+		</table>
+	</div>		
+				
+<div id='bodyContainerId' class='bodyContainer'>
+	<div id='headerId' class='header'>
+		<p>Accession Communicator</p>
+		<div id='navigation' class='navigation' onclick='showNav()'></div>
+	</div>	
+	<img id='slideSurroundRoadmap' src='imgs/roadmap_tag.png'/>	
+	<div id='sliderId' class='sliderContainer'>
+		<div id='slider1' class='swipe'>
+		  <ul id="sliderelement">
+		    
+			<li class='page1' style='display:block'>
+				<div class='slideSurround'>
+					<table id='slideIntro'>
+						<tbody>
+							<tr>
+								<td>
+									<img src='imgs/page1logo.png'>
+								</td>
+								<td>	
+									<div class='textBig'>Accession Communicator</div>
+									<div class='textMediumGold'>simple, powerful business communication you can rely on</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</li>			
+			
+			
+		    <li class='page2' style='display:none'>
+				<div class='slideSurround'>
+					<table id='slideIntro2'>
+						<tbody>
+							<tr>
+								<td class='tdBottom'>
+									<div class='contentPanel'>
+										<div class='textBigWhite'>Add mobility to your services</div>
+										<div class='textBigWhite'>with cross-platform availability</div>
+									</div>	
+								</td>
+							</tr>
+						</tbody>
+					</table>	
+		    	</div>
+			</li>									
+			
+			<li class='page3' style='display:none'>
+				<div class='slideSurround'>
+					<table id='slideAudioCalls'>
+						<tbody>
+							<tr>
+								<td>
+									<span class='contentPanel'>
+										<div class='textBigBlue'>Audio Calls</div>
+										<div class='textMediumGrey'>Voice quality is the foundation of your offering, and critical to the overall experience.</div>
+										<div class='textMediumGrey'>We've made sure that the quality of calls is always <b>exceptional</b>.</div>
+									</span>
+								</td>
+								<td>	
+									<div id='audio_call_img'></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>	
+		    	</div>
+			</li>	
+			
+			<li class='page4' style='display:none'>
+				<div class='slideSurround'>
+					<table id='slideAudioDetails'>
+						<tbody>
+							<tr>
+								<td width='344px'>
+									<table style="height:480px; padding-bottom:50px;">
+										<tbody>
+											<tr>
+												<td>
+													<span class='audioDescription audioDescriptionLeft'>
+														<div class='textMediumGreyTitle'>SILK codec integration</div>
+														<div class='textMediumGrey'>for optimized clarity under hardware and network constraints and real time adjustment to network conditions and CPU resources.</div>
+													</span>
+												</td>
+												<td><img src='imgs/pointer_left.png'></td>
+											</tr>
+											<tr>
+												<td>
+													<span class='audioDescription audioDescriptionLeft'>
+														<div class='textMediumGreyTitle'>Web RTC Echo Cancellation</div>
+														<div class='textMediumGrey'>for real time analysis and removal of unwanted noises generated by the speaker.</div>
+													</span>
+												</td>
+												<td><img src='imgs/pointer_left.png'></td>
+											</tr>
+										</tbody>
+									</table>				
+								</td>
+								<td width='300px'>	
+								</td>
+								<td width='344px'>
+									<table style="height:440px; padding-top:20px;">
+										<tbody>
+											<tr>
+												<td><img src='imgs/pointer_right.png'></td>
+												<td>
+													<span class='audioDescription audioDescriptionRight'>
+														<div class='textMediumGreyTitle'>Finely-tuned Jitter buffers</div>
+														<div class='textMediumGrey'>to provide the perfect balance between packet loss reduction and minimized audio delay.</div>
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td><img src='imgs/pointer_right.png'></td>
+												<td>
+													<span class='audioDescription audioDescriptionRight'>
+														<div class='textMediumGreyTitle'>Hardened WiFi network handling</div>
+														<div class='textMediumGrey' style="padding-right: 5px;">to monitor and adapt to levels of loss in the network, providing dynamic loss correction and suppression.</div>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>				
+								</td>
+							</tr>
+						</tbody>
+					</table>	
+		    	</div>
+			</li>	
+			
+			
+			
+			<li class='page5' style='display:none'>
+				<div class='slideSurround'>
+					<table id='slideVideoCalls'>
+						<tbody>
+							<tr>
+								<td>
+									<span class='contentPanel'>
+										<div class='textBigBlue'>Video Calls</div>
+										<div class='textMediumGrey'>Now users can access video calling without moving to a competing application and without the barrier of their enterprise investing in expensive equipment.</div>
+									</span>
+								</td>
+								<td>	
+									<div id='video_call_img'></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>	
+		    	</div>
+			</li>
+			
+			
+			<li class='page6' style='display:none'>
+				<div class='slideSurround'>
+					<table id='slideMoveCalls'>
+						<tbody>
+							<tr>
+								<td>
+									<span class='contentPanel'>
+										<div class='textBigBlue'>Move Calls</div>
+										<div class='textMediumGrey'>For a truly unified experience, calls can be moved seamlessly between devices.</div>
+									</span>
+								</td>
+								<td>	
+									<div id='move_call_img'></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>	
+		    	</div>
+			</li>
+			
+			<li class='page7' style='display:none'>
+				<div class='slideSurround'>
+					<table id='slidePullCalls'>
+						<tbody>
+							<tr>							
+								<td class='tdBottom'>
+									<span id="ipPadding" class='contentPanel'>
+										<div class='textBigWhite'>Pull calls from your</div>
+										<div class='textBigWhite'>desk phone with one tap</div>
+									</span>
+									<div class='interactivePanel'>
+										<div id="bkg2">
+											<div id="hideDelay">
+												<img id="bkg1" src='imgs/btn_callPull_background.png'/>
+												<img id="anim" src='imgs/btn_callPull_animation.png'/>
+												<img id="buttonup" onClick="pullCall()" src='imgs/btn_callPull_up.png'/>
+												<img id="buttondown" src='imgs/btn_callPull_down.png'/>
+												<img id="tap1" src='imgs/taptopullto.png'/>	
+												<img id="tap2" src='imgs/taptopull.png'/>
+												<img id="hint1" src='media/tap1.png'/>
+												<div id="stoptaps1"></div>
+												<img id="cover" src='imgs/callbkg.png'/>
+											</div>
+											<img id="pullchange" src='media/pullcalledit.png'>	
+										</div>
+										<img id="reset1" onClick="pullCall()" src='media/reset.png'/>
+									</div>	
+								</td>
+							</tr>
+						</tbody>
+					</table>	
+		    	</div>
+			</li>
+			
+			<li class='page8' style='display:none'>
+				<div class='slideSurround'>
+					<table id='slidePushCalls'>
+						<tbody>
+							<tr>
+								<td class='tdBottom'>
+									<span id="ipPadding" class='contentPanel'>
+										<div class='textBigWhite'>Or push them back to</div>
+										<div class='textBigWhite'>your desk phone</div>
+									</span>
+									<div class='interactivePanel'>
+										<div id="bkg3">
+											<div id="hideDelay2">
+												<img id="switchbutton" onClick="pushCall()" src='media/switchbutton.png'/>
+												<div id="anim2" ></div>
+												<img id="hint2" src='media/tap2.png'/>	
+												<img id="pushchange1" src='media/pushcall2.png'>	
+												<img id="pushchange2" src='media/pushcall3.png'>
+												<img id="pushchange3" src='media/pushcall4.png'>
+												<div id="stoptaps2"></div>
+											</div>
+										</div>
+									</div>
+									<img id="reset2" onClick="pushCall()" src='media/reset.png'/>
+									<img id="answer" onClick="answerCall()" src='media/answer.png'/>
+								</td>
+							</tr>
+						</tbody>
+					</table>	
+		    	</div>
+			</li>
+			
+			<li class='page9' style='display:none'>
+				<div class='slideSurround'>
+					<table id='slideECM'>
+						<tbody>
+							<tr>
+								<td>
+									<span class='contentPanel'>
+										<div class='textBigBlue'>Call Manager</div>
+										<div class='textMediumGrey'>3 simple settings to decide how incoming calls are handled. Set to Do Not Disturb if you're unavailable, or forward all your calls if you're out of the office without data access.</div>
+									</span>
+								</td>
+								<td>	
+									<div id='ecm_img'></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>	
+		    	</div>
+			</li>
+			
+			<li class='page10' style='display:none'>
+				<div class='slideSurround'>
+					<table id='slideVVM'>
+						<tbody>
+							<tr>
+								<td>
+									<span class='contentPanel'>
+										<div class='textBigBlue'>Visual Voicemail</div>
+										<div class='textMediumGrey'>No more navigating through TUIs - Visual Voicemail gives you instant access to your mailbox. Tap on a message to listen to it, or just read the transcription if you're stuck in a meeting.</div>
+									</span>
+								</td>
+								<td>	
+									<div id='vvm_img'></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>	
+		    	</div>
+			</li>
+			
+			<li class='page11' style='display:none'>
+				<div class='slideSurround'>
+					<table id='slideVVMVideo'>
+						<tbody>
+							<tr>
+								<td>
+									<span class='contentPanel'>
+										<div class='textBigBlue'>Videomail</div>
+										<div class='textMediumGrey'>Videomail provides all the benefits a video call does for your enterprise users - a great opportunity to upsell from basic video calling.</div>
+									</span>
+								</td>
+								<td>	
+									<div id='vvmv_img'></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>	
+		    	</div>
+			</li>
+			
+			
+			<li class='page12' style='display:none'>
+				<div class='slideSurround'>
+					<table id='slideRoadmap'>
+						<tbody>
+							<tr>
+								<td>
+									<span class='contentPanel'>
+										<div class='textBigWhite textBigRed'>The Roadmap</div>
+										<div class='textMediumGrey'>All the features so far are available <b>today</b>,<br>but we're continually building for the future too.</div>
+										<div class='textMediumGrey'>The following features are not committed, <br>but they do represent our vision for business communication.</div>
+									</span>
+								</td>
+								<td>	
+									<div id='roadmap_img'></div>
+								</td>
+							</tr>
+						</tbody>
+					</table>	
+		    	</div>
+			</li>
+			
+			
+		    <li class='page13' style='display:none'>
+				<div id='slide7Calls' class='slideSurround'>
+					<table id='videoIntro11'>
+						<tbody>
+							<tr>
+								<td>
+									<div class='contentPanel'>
+										<div class='textBigBlue'>In-Call Features</div>
+										<div class='textMediumGrey'>Extended features allow for more control during phone calls, such as multiple call handling and 3-way calling.</div>
+										<div class='button' onclick="playVideo(11)"><img src='imgs/learnmore.png'></div>
+									</div>
+								</td>
+								<td>
+									<div class='rightColumn calls'>	
+										<img src='media/callsimage.png'></img>
+									</div>			
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table id='videoSlide11' style='display:none'>
+						<tbody>
+							<tr>
+								<td>
+									<div>	
+										<video width="810.67px" height="608px" id="showVideo11"  preload="auto" poster="media/hub2.png">
+											<source src="media/calls.mp4" type="video/mp4" />
+											<source src="media/calls.theora.ogv" type="video/ogg" />
+											<object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="810.67px" height="608px">
+												<param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+												<param name="allowFullScreen" value="true" />
+												<param name="wmode" value="transparent" />
+												<param name="flashVars" value="config={'playlist':['',{'url':'hub2.mp4','autoPlay':false}]}" />
+												<img alt="iPad Demo" src="" width="880" height="660" title="No video playback capabilities, please download the video below" />
+											</object>
+										</video>
+									</div>
+								</td>
+								<td vertical-align='top'>
+									<div class='button' onclick="playVideo(11)"><img src='imgs/close.png'></div>
+								</td>								
+							</tr>		
+						</tbody>
+					</table>	
+				</div>								
+			</li>			
+			
+			
+		    <li class='page14' style='display:none'>
+				<div id='slide5Chat' class='slideSurround'>
+					<table id='videoIntro13'>
+						<tbody>
+							<tr>
+								<td>
+									<div class='contentPanel'>
+										<div class='textBigBlue'>Chat</div>
+										<div class='textMediumGrey'>Provides you with the immediacy of IM within Accession. Keep up-to-date with your team using group chat &amp; make the most of shared content.</div>
+										<div class='button' onclick="playVideo(13)"><img src='imgs/learnmore.png'></div>
+									</div>
+								</td>
+								<td>
+									<div class='rightColumn calls'>	
+										<img src='media/chatimage.png'></img>
+									</div>			
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table id='videoSlide13' style='display:none'>
+						<tbody>
+							<tr>
+								<td>
+									<div>	
+										<video width="810.67px" height="608px" id="showVideo13"  preload="auto" poster="media/hub2.png">
+											<source src="media/chat.mp4" type="video/mp4" />
+											<source src="media/chat.theora.ogv" type="video/ogg" />
+											<object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="810.67px" height="608px">
+												<param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+												<param name="allowFullScreen" value="true" />
+												<param name="wmode" value="transparent" />
+												<param name="flashVars" value="config={'playlist':['',{'url':'hub2.mp4','autoPlay':false}]}" />
+												<img alt="iPad Demo" src="" width="880" height="660" title="No video playback capabilities, please download the video below" />
+											</object>
+										</video>
+									</div>
+								</td>
+								<td vertical-align='top'>
+									<div class='button' onclick="playVideo(13)"><img src='imgs/close.png'></div>
+								</td>								
+							</tr>		
+						</tbody>
+					</table>	
+				</div>								
+			</li>			
+			<li class='page15' style='display:none'>
+				<div class='slideSurround'>
+					<table id='slide6ChatInteractive'>
+						<tbody>
+							<tr>
+								<td style='height:575px'>
+									<div id='chatBG'>
+										<div id='chatPlus1' class='chatPlus' onclick="showZoomChat(1),blurBGChat()"></div>
+										<div id='chatPlus2' class='chatPlus' onclick="showZoomChat(2),blurBGChat()"></div>
+										<div id='chatPlus3' class='chatPlus' onclick="showZoomChat(3),blurBGChat()"></div>
+										<div id='chatPlus4' class='chatPlus' onclick="showZoomChat(4),blurBGChat()"></div>
+										<div id='chatPlus5' class='chatPlus' onclick="showZoomChat(5),blurBGChat()"></div>
+										<div id='chatPlus6' class='chatPlus' onclick="showZoomChat(6),blurBGChat()"></div>										
+										<div id='chatImage1' class='chatImage'><img src='media/startchat.png'></img></div>																													
+										<div id='chatImage2' class='chatImage'><img src='media/actions.png'></img></div>
+										<div id='chatImage3' class='chatImage'><img src='media/privately.png'></img></div>
+										<div id='chatImage4' class='chatImage'><img src='media/presence.png'></img></div>
+										<div id='chatImage5' class='chatImage'><img src='media/share.png'></img></div>
+										<div id='chatImage6' class='chatImage'><img src='media/readreport.png'></img></div>		
+										<div id="tap"><img src='media/tap.png'></img></div>								
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>	
+		    	</div>
+			</li>
+			
+			
+			<li class='page16' style='display:none'>
+				<div id='slide3Hub' class='slideSurround'>
+					<table id='videoIntro15'>
+						<tbody>
+							<tr>
+								<td>
+									<div class='contentPanel'>
+										<div class='textBigBlue'>The Hub</div>
+										<div class='textMediumGrey'>Acting as a focal point, the Hub provides an 'at a glance' overview of your account and shortcuts to the things you do most often.</div>
+										<div class='button buttonLearnHub' onclick="playVideo(15)"><img src='imgs/learnmore.png'></div>
+									</div>
+								</td>
+								<td>
+									<div class='rightColumn calls'>	
+										<img src='media/thehubimage.png'></img>
+									</div>		
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table id='videoSlide15' style='display:none'>
+						<tbody>
+							<tr>
+								<td>
+									<div>	
+										<video width="810.67px" height="608px" id="showVideo15"  preload="metadata" poster="media/hub2.png">
+											<source src="media/hublong.mp4" type="video/mp4" />
+											<source src="media/hublong.ogv" type="video/ogg" />
+											<object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="810.67px" height="608px">
+												<param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+												<param name="allowFullScreen" value="true" />
+												<param name="wmode" value="transparent" />
+												<param name="flashVars" value="config={'playlist':['',{'url':'hub2.mp4','autoPlay':false}]}" />
+												<img alt="iPad Demo" src="" width="880" height="660" title="No video playback capabilities, please download the video below" />
+											</object>
+										</video>
+									</div>
+								</td>
+								<td vertical-align='top'>
+									<div class='button' onclick="playVideo(15)"><img src='imgs/close.png'></div>
+								</td>
+							</tr>		
+						</tbody>
+					</table>	
+				</div>								
+			</li>	
+			<li class='page17' style='display:none'>
+				<div class='slideSurround'>
+					<table id='slide4HubInteractive'>
+						<tbody>
+							<tr>
+								<td style='height:575px'>
+									<div id='hubBG'>
+										<div id='hubPlus1' class='hubPlus' onclick="showZoomNew(1),blurBG()"></div>
+										<div id='hubPlus2' class='hubPlus' onclick="showZoomNew(2),blurBG()"></div>
+										<div id='hubPlus3' class='hubPlus' onclick="showZoomNew(3),blurBG()"></div>
+										<div id='hubPlus4' class='hubPlus' onclick="showZoomNew(4),blurBG()"></div>	
+										<div id='hubImage1' class='hubImage'><img src='media/status.png'></img></div>																													
+										<div id='hubImage2' class='hubImage'><img src='media/media.png'></img></div>
+										<div id='hubImage3' class='hubImage'><img src='media/people.png'></img></div>
+										<div id='hubImage4' class='hubImage'><img src='media/notifications.png'></img></div>
+									</div>
+									
+								</td>
+							</tr>
+						</tbody>
+					</table>	
+		    	</div>
+			</li>
+			
+			<li class='page18' style='display:block'>
+				<div class='slideSurround'>
+					<table id='slideOutro'>
+						<tbody>
+							<tr>
+								<td>
+									<img src='imgs/page1logo.png'>
+								</td>
+								<td>	
+									<div class='textBig'>Accession Communicator</div>
+									<div class='textMediumGold'>simple, powerful business communication you can rely on</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</li>			
+										
+			
+		  </ul>
+		</div>
+	</div>
+
+	
+	<div id='footerId' class='footer'>
+		<div class='footerShadow'></div>
+		<div class='footerNav'>
+			<a class='navigate_left' href='#' onclick='slider3.prev();return false;'><img src='imgs/nav_left.png'></a> 
+			<a class='navigate_right' href='#' onclick='slider3.next();return false;'><img src='imgs/nav_right.png'></a>
+		</div>	
+	</div>	
+</div>						
+
+<script src='js/swipe.js'></script>
+<script>
+var slider3 = new Swipe(document.getElementById('slider1'));
+adjustHeight();
+
+</script>
+<script>
+
+document.onkeydown=function(e){
+    if(e.which == 39){
+         slider3.next()
+    }
+    if(e.which == 37){
+         slider3.prev()
+    }
+}
+var playStop = 'Paused';
+
+function playVideo(videoNumber)
+{
+	var videoSlide = 'videoSlide' + videoNumber;
+	var getVideo = 'showVideo' + videoNumber;
+	var introSlide = 'videoIntro' + videoNumber;
+	
+	if (playStop == 'Paused')
+	{
+		document.getElementById(getVideo).play();
+		document.getElementById(videoSlide).style.opacity = 100;
+		document.getElementById(videoSlide).style.display = 'table';
+		document.getElementById(introSlide).style.display = 'none';
+		document.getElementById('sliderId').style.background = '#e7e6e7';
+		playStop = 'Playing'
+	}
+	else
+	{
+		document.getElementById(getVideo).currentTime=0;
+		document.getElementById(getVideo).pause();
+		document.getElementById(videoSlide).style.display = 'none';
+		document.getElementById(introSlide).style.display = 'table';
+		document.getElementById('sliderId').style.backgroundImage = "url('imgs/main_bg.png')";
+		playStop = 'Paused'
+	}
+	document.getElementById(getVideo).addEventListener('ended',myHandler,false);
+	function myHandler(e) {
+		document.getElementById(getVideo).currentTime=0;
+		document.getElementById(getVideo).pause();
+		document.getElementById(videoSlide).style.display = 'none';
+		document.getElementById(introSlide).style.display = 'table';
+		document.getElementById('sliderId').style.backgroundImage = "url('imgs/main_bg.png')";
+		playStop = 'Paused'
+	}
+}
+
+for (i=10;i<16;i++){
+	i++
+	var videoSlide = 'videoSlide' + i;
+	var getVideo = 'showVideo' + i;
+	var introSlide = 'videoIntro' + i;
+	document.getElementById(getVideo).addEventListener('ended',myHandler,false);
+		function myHandler(e) {
+		if(!e) { e = window.event; }
+		document.getElementById(getVideo).currentTime=0;
+		document.getElementById(getVideo).pause();
+	}
+}
+
+
+
+function showZoomNew(imageNumber)
+{	
+	for (i=1;i<5;i++)
+	{
+		var getImage = 'hubImage' + i;
+		var getPlus = 'hubImage' + imageNumber;
+		var getMinus = 'hubPlus' + imageNumber;
+		var getMinusimage = 'hubPlus' + i;
+
+		if (getImage == getPlus)
+		{
+			if (document.getElementById(getPlus).style.opacity == 0)
+			{	
+				document.getElementById(getPlus).style.opacity = 100;
+				document.getElementById(getPlus).style.opacity = 1.0;
+				document.getElementById(getMinus).style.backgroundPosition = "right";
+				dontBlur = 'false'
+			}
+			else
+			{	
+				document.getElementById(getPlus).style.opacity = 0;
+				document.getElementById(getMinus).style.backgroundPosition = "left";
+				document.getElementById('hubBG').style.backgroundPosition = "left bottom";
+			}	
+		}
+		else
+		{
+			document.getElementById(getImage).style.opacity = 0;
+			document.getElementById(getMinusimage).style.backgroundPosition = "left";
+		}
+	}
+}	
+var dontBlur = 'false'
+function blurBG()
+{	
+		if (dontBlur == 'false')
+		{
+			document.getElementById('hubBG').style.backgroundPosition = "right bottom";
+			dontBlur= 'true';
+			document.getElementById('tap').style.opacity = 0;
+		}
+		else
+		{
+			// do nothing //
+		}
+
+}
+function showZoomChat(imageNumber)
+{	
+	for (i=1;i<7;i++)
+	{
+		var getImage = 'chatImage' + i;
+		var getPlus = 'chatImage' + imageNumber;
+		var getMinus = 'chatPlus' + imageNumber;
+		var getMinusimage = 'chatPlus' + i;
+
+		if (getImage == getPlus)
+		{
+			if (document.getElementById(getPlus).style.opacity == 0)
+			{	
+				document.getElementById(getPlus).style.opacity = 100;
+				document.getElementById(getPlus).style.opacity = 1.0;
+				document.getElementById(getMinus).style.backgroundPosition = "right";
+				dontBlurChat = 'false'
+			}
+			else
+			{	
+				document.getElementById(getPlus).style.opacity = 0;
+				document.getElementById(getMinus).style.backgroundPosition = "left";
+				document.getElementById('chatBG').style.backgroundPosition = "left bottom";
+			}	
+		}
+		else
+		{
+			document.getElementById(getImage).style.opacity = 0;
+			document.getElementById(getMinusimage).style.backgroundPosition = "left";
+		}
+	}
+}	
+var dontBlurChat = 'false'
+function blurBGChat()
+{	
+		if (dontBlurChat == 'false')
+		{
+			document.getElementById('chatBG').style.backgroundPosition = "right bottom";
+			dontBlurChat= 'true';
+			document.getElementById('tap').style.opacity = 0;
+		}
+		else
+		{
+			// do nothing //
+		}
+
+}
+
+function showNav()
+{
+	document.getElementById('navoverlay').style.display = 'block'
+}
+
+var ispullCall = 'notpulled'
+function pullCall()
+{
+	if (ispullCall == 'notpulled')
+	{	
+	document.getElementById('buttonup').style.opacity = 0;
+	document.getElementById('buttondown').style.opacity = 1;
+	document.getElementById('anim').style.webkitTransform = "rotate(800deg)";
+	document.getElementById('anim').style.MozTransform = "rotate(800deg)";
+	document.getElementById('anim').style.OTransform = "rotate(800deg)";
+	document.getElementById('anim').style.msTransform = "rotate(800deg)";
+	document.getElementById('anim').style.Transform = "rotate(800deg)";
+	document.getElementById('anim').style.opacity = 1;	
+	document.getElementById('cover').style.opacity = 1;
+	document.getElementById('cover').style.zIndex = 4;
+	document.getElementById('tap1').style.opacity = 0;
+	document.getElementById('tap2').style.opacity = 1;
+	document.getElementById('pullchange').style.opacity = 1;
+	document.getElementById('pullchange').style.height = '57px';
+	document.getElementById('reset1').style.height = '34px';
+	document.getElementById('reset1').style.opacity = 1;
+	document.getElementById('hint1').style.opacity = 0;
+	document.getElementById('stoptaps1').style.display='block';	
+	document.getElementById('stoptaps1').style.width='800px';
+	ispullCall='pulled';
+	}
+	else
+	{
+		document.getElementById('buttonup').style.opacity = 1;
+		document.getElementById('buttondown').style.opacity = 0;
+		document.getElementById('anim').style.opacity = 0;
+		document.getElementById('anim').style.webkitTransform = "rotate(0deg)";
+		document.getElementById('anim').style.MozTransform = "rotate(0deg)";
+		document.getElementById('anim').style.OTransform = "rotate(0deg)";
+		document.getElementById('anim').style.msTransform = "rotate(800deg)";
+		document.getElementById('anim').style.Transform = "rotate(800deg)";
+		document.getElementById('cover').style.opacity = 0;
+		document.getElementById('cover').style.zIndex = 2;
+		document.getElementById('tap1').style.opacity = 1;
+		document.getElementById('tap2').style.opacity = 0;
+		document.getElementById('pullchange').style.opacity = 0;
+		document.getElementById('pullchange').style.height = '0px';		
+		document.getElementById('reset1').style.height = '0px';
+		document.getElementById('reset1').style.opacity = 0;
+		document.getElementById('stoptaps1').style.width='2px';
+		ispullCall='notpulled';
+	}
+}
+var ispushCall = 'notpushed'
+function pushCall()
+{
+	if (ispushCall == 'notpushed')
+	{
+	document.getElementById('stoptaps2').style.display='block';	
+	document.getElementById('pushchange2').style.opacity = 1;
+	document.getElementById('anim2').style.opacity = 1;
+	document.getElementById('hint2').style.opacity = 0;
+	document.getElementById('answer').style.opacity = 1;
+	document.getElementById('answer').style.height = '34px';
+	document.getElementById('reset2').style.height = '34px';
+	ispushCall='pushed';
+	}
+	else
+	{
+		document.getElementById('stoptaps2').style.display='none';	
+		document.getElementById('pushchange1').style.opacity = 0;
+		document.getElementById('pushchange2').style.opacity = 0;
+		document.getElementById('pushchange3').style.opacity = 0;
+		document.getElementById('reset2').style.height = '0px';
+		document.getElementById('reset2').style.opacity = 0;
+		ispushCall='notpushed';	
+	}
+}
+function answerCall()
+{
+	document.getElementById('pushchange3').style.opacity = 1;
+	document.getElementById('anim2').style.opacity = 0;	
+	document.getElementById('pushchange1').style.opacity = 1;
+	document.getElementById('reset2').style.opacity = 1;
+	document.getElementById('answer').style.opacity = 0;
+	document.getElementById('answer').style.height = '0px';
+}
+</script>
+</body> 
+</html>

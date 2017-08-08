@@ -1,0 +1,12 @@
+
+#audio_call_img, #video_call_img, #move_call_img, 
+#ecm_img, #vvm_img
+{
+	height: 600px;
+  overflow: hidden;
+}
+
+#roadmap_img
+{
+	height: 400px;
+}
